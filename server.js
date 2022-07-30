@@ -30,7 +30,7 @@ const Test = require('./Schema/Models/Test')
 app.use(jsonParser); 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(cors({origin:"https://testme2.netlify.app"}))      
+app.use(cors())      
 
 const getQuestion = require('./Routes/getQuestions')
 const submiTest = require('./Routes/submitTest')
