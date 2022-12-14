@@ -5,7 +5,7 @@ require('dotenv').config()
 const app = express()
 
 
-mongoose.connect('mongodb+srv://Admin:quizapp@cluster0.9eakj.mongodb.net/Quizapp?retryWrites=true&w=majority',{
+mongoose.connect(process.env.DB_URI,{
     useNewUrlParser:true,
     useUnifiedTopology: true
     })                                                   //Database Connection                              
