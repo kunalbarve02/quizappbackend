@@ -30,7 +30,7 @@ const Test = require('./Schema/Models/Test')
 app.use(jsonParser); 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(cors())      
+app.use(cors({origin: '*'}))      
 
 const getQuestion = require('./Routes/getQuestions')
 const submiTest = require('./Routes/submitTest')
